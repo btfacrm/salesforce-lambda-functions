@@ -308,6 +308,7 @@ Resources:
   sfLambdaLayer:
     Type: AWS::Serverless::LayerVersion
     Properties:
+      LayerName: Prod-sfLambdaLayer
       Description: Salesforce Lambda function external dependencies
       ContentUri:
         Bucket: 273332161721-salesforce-lambda-functions-source
