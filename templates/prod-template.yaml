@@ -311,7 +311,7 @@ Resources:
       LayerName: Prod-sfLambdaLayer
       Description: Salesforce Lambda function external dependencies
       ContentUri:
-        Bucket: 273332161721-salesforce-lambda-functions-source
+        Bucket: 273332161721-salesforce-lambda-functions-source-us-west-2
         Key: layer.zip
       CompatibleRuntimes:
       - python3.10
@@ -1012,7 +1012,7 @@ Resources:
           LOGGING_LEVEL:
             Ref: LambdaLoggingLevel
       CodeUri:
-        Bucket: 273332161721-salesforce-lambda-functions-source
+        Bucket: 273332161721-salesforce-lambda-functions-source-us-west-2
         Key: updated-auth.zip
   sfExecuteAWSService:
     Type: AWS::Serverless::Function
@@ -1044,7 +1044,7 @@ Resources:
           SALESFORCE_HOST:
             Ref: SalesforceHost
       CodeUri:
-        Bucket: 273332161721-salesforce-lambda-functions-source
+        Bucket: 273332161721-salesforce-lambda-functions-source-us-west-2
         Key: original-auth.zip
   sfContactTraceRecord:
     Type: AWS::Serverless::Function
@@ -1080,7 +1080,7 @@ Resources:
           LOGGING_LEVEL:
             Ref: LambdaLoggingLevel
       CodeUri:
-        Bucket: 273332161721-salesforce-lambda-functions-source
+        Bucket: 273332161721-salesforce-lambda-functions-source-us-west-2
         Key: original-auth.zip
   sfIntervalAgent:
     Type: AWS::Serverless::Function
@@ -1116,7 +1116,7 @@ Resources:
           LOGGING_LEVEL:
             Ref: LambdaLoggingLevel
       CodeUri:
-        Bucket: 273332161721-salesforce-lambda-functions-source
+        Bucket: 273332161721-salesforce-lambda-functions-source-us-west-2
         Key: updated-auth.zip
   sfIntervalQueue:
     Type: AWS::Serverless::Function
@@ -1152,7 +1152,7 @@ Resources:
           LOGGING_LEVEL:
             Ref: LambdaLoggingLevel
       CodeUri:
-        Bucket: 273332161721-salesforce-lambda-functions-source
+        Bucket: 273332161721-salesforce-lambda-functions-source-us-west-2
         Key: updated-auth.zip
   sfRealTimeQueueMetrics:
     Type: AWS::Serverless::Function
@@ -1194,7 +1194,7 @@ Resources:
           LOGGING_LEVEL:
             Ref: LambdaLoggingLevel
       CodeUri:
-        Bucket: 273332161721-salesforce-lambda-functions-source
+        Bucket: 273332161721-salesforce-lambda-functions-source-us-west-2
         Key: updated-auth.zip
   sfRealTimeQueueMetricsLoopJob:
     Type: AWS::Serverless::Function
@@ -1220,7 +1220,7 @@ Resources:
           LOGGING_LEVEL:
             Ref: LambdaLoggingLevel
       CodeUri:
-        Bucket: 273332161721-salesforce-lambda-functions-source
+        Bucket: 273332161721-salesforce-lambda-functions-source-us-west-2
         Key: original-auth.zip
   sfGetTranscribeJobStatus:
     Type: AWS::Serverless::Function
@@ -1244,7 +1244,7 @@ Resources:
           LOGGING_LEVEL:
             Ref: LambdaLoggingLevel
       CodeUri:
-        Bucket: 273332161721-salesforce-lambda-functions-source
+        Bucket: 273332161721-salesforce-lambda-functions-source-us-west-2
         Key: original-auth.zip
   sfSubmitTranscribeJob:
     Type: AWS::Serverless::Function
@@ -1268,7 +1268,7 @@ Resources:
           LOGGING_LEVEL:
             Ref: LambdaLoggingLevel
       CodeUri:
-        Bucket: 273332161721-salesforce-lambda-functions-source
+        Bucket: 273332161721-salesforce-lambda-functions-source-us-west-2
         Key: original-auth.zip
   sfExecuteTranscriptionStateMachine:
     Type: AWS::Serverless::Function
@@ -1308,7 +1308,7 @@ Resources:
           LOGGING_LEVEL:
             Ref: LambdaLoggingLevel
       CodeUri:
-        Bucket: 273332161721-salesforce-lambda-functions-source
+        Bucket: 273332161721-salesforce-lambda-functions-source-us-west-2
         Key: original-auth.zip
   sfCTRTrigger:
     Type: AWS::Serverless::Function
@@ -1342,7 +1342,7 @@ Resources:
           LOGGING_LEVEL:
             Ref: LambdaLoggingLevel
       CodeUri:
-        Bucket: 273332161721-salesforce-lambda-functions-source
+        Bucket: 273332161721-salesforce-lambda-functions-source-us-west-2
         Key: original-auth.zip
   CTREventSourceMapping:
     Type: AWS::Lambda::EventSourceMapping
@@ -1383,7 +1383,7 @@ Resources:
           LOGGING_LEVEL:
             Ref: LambdaLoggingLevel
       CodeUri:
-        Bucket: 273332161721-salesforce-lambda-functions-source
+        Bucket: 273332161721-salesforce-lambda-functions-source-us-west-2
         Key: original-auth.zip
   sfProcessContactLens:
     Type: AWS::Serverless::Function
@@ -1417,7 +1417,7 @@ Resources:
           LOGGING_LEVEL:
             Ref: LambdaLoggingLevel
       CodeUri:
-        Bucket: 273332161721-salesforce-lambda-functions-source
+        Bucket: 273332161721-salesforce-lambda-functions-source-us-west-2
         Key: original-auth.zip
   sfRealTimeQueueMetricsLoopJobStateMachine:
     Type: AWS::StepFunctions::StateMachine
